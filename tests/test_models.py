@@ -116,17 +116,6 @@ class TestProductModel(unittest.TestCase):
         self.assertEqual(found_product.description, product.description)
         self.assertEqual(found_product.price, product.price)
 
-    # def test_invalid_id_on_update(self):
-    #     """ Test invalid ID update """
-    #     product = ProductFactory()
-    #     product.id = None
-    #     product.create()
-
-    #     product.id = None
-    #     product.description = "testing"
-    #     product.update()
-    #     self.assertRaises(DataValidationError, product.update)
-
     def test_update_a_product(self):
         """It should Update a Product"""
         product = ProductFactory()
